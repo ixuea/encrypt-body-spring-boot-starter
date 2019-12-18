@@ -75,7 +75,7 @@ public class EncryptResponseBodyAdvice implements ResponseBodyAdvice {
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType,
                                   Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
         if(body==null) return null;
-        response.getHeaders().setContentType(MediaType.TEXT_PLAIN);
+//        response.getHeaders().setContentType(MediaType.TEXT_PLAIN);
         String str = null;
         try {
             str = objectMapper.writeValueAsString(body);
