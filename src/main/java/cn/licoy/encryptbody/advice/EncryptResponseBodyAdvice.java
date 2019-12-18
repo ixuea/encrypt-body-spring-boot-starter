@@ -205,7 +205,8 @@ public class EncryptResponseBodyAdvice implements ResponseBodyAdvice {
         }
         if(method == EncryptBodyMethod.AES){
             key = CheckUtils.checkAndGetKey(config.getAesKey(),key,"AES-KEY");
-            return AESEncryptUtil.encrypt(formatStringBody,key);
+            String iv = CheckUtils.checkAndGetKey(config.getAesIv(), key, "AES-IV");
+            return AESEncryptUtil.encrypt(formatStringBody,key,iv);
         }
         throw new EncryptBodyFailException();
     }

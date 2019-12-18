@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.licoy</groupId>
+    <groupId>cn.ixuea</groupId>
     <artifactId>encrypt-body-spring-boot-starter</artifactId>
-    <version>1.0.3.RELEASE</version>
+    <version>2.0.0.RELEASE</version>
 
     <name>encrypt-body-spring-boot-starter</name>
     <description>encrypt-body-spring-boot-starter是SpringBoot控制器统一的响应体加密与请求体解密的注解处理方式，支持MD5/SHA/AES/DES/RSA</description>

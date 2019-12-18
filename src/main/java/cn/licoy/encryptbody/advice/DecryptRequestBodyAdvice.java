@@ -194,7 +194,8 @@ public class DecryptRequestBodyAdvice implements RequestBodyAdvice {
         }
         if(method == DecryptBodyMethod.AES){
             key = CheckUtils.checkAndGetKey(config.getAesKey(),key,"AES-KEY");
-            return AESEncryptUtil.decrypt(formatStringBody,key);
+            String iv = CheckUtils.checkAndGetKey(config.getAesIv(), key, "AES-IV");
+            return AESEncryptUtil.decrypt(formatStringBody,key,iv);
         }
         throw new DecryptBodyFailException();
     }

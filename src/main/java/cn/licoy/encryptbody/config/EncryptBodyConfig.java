@@ -23,10 +23,9 @@ public class EncryptBodyConfig {
 
     private String aesKey;
 
+    private String aesIv;
+
     private String desKey;
 
     private String encoding = "UTF-8";
-
-
-
 }

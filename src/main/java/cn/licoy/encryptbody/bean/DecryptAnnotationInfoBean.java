@@ -23,4 +23,6 @@ public class DecryptAnnotationInfoBean {
 
     private String key;
 
+    private String iv;
+
 }

@@ -22,6 +22,8 @@ public class EncryptAnnotationInfoBean {
 
     private String key;
 
+    private String iv;
+
     private SHAEncryptType shaEncryptType;
 
 }
