@@ -206,7 +206,6 @@ package cn.licoy.encryptbody.annotation;
 import cn.licoy.encryptbody.advice.DecryptRequestBodyAdvice;
 import cn.licoy.encryptbody.advice.EncryptResponseBodyAdvice;
 import cn.licoy.encryptbody.config.EncryptBodyConfig;
-import cn.licoy.encryptbody.config.HttpConverterConfig;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -223,7 +222,7 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 @Import({EncryptBodyConfig.class,
-        HttpConverterConfig.class,
+//        HttpConverterConfig.class,
         EncryptResponseBodyAdvice.class,
         DecryptRequestBodyAdvice.class})
 public @interface EnableEncryptBody {
